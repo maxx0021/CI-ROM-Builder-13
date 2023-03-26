@@ -13,4 +13,4 @@ chmod +x barom.sh
 ./barom.sh --device rova --lunch banana_rova-userdebug
 ./barom.sh -b -j 8 -u wet --timer 110m -- m banana
 
-# end
+# end 
