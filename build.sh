@@ -11,4 +11,4 @@ chmod +x barom.sh
 ./barom.sh --device Mi8937 --lunch cherish_Mi8937-userdebug
 ./barom.sh -b -j 8 -u gof --timer 95m -- mka bacon
 
-# end
+# end 
