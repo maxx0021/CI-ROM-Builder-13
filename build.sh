@@ -1,7 +1,9 @@
 # sync rom
-repo init --depth=1 --no-repo-verify -u https://github.com/LineageOS/android -b lineage-20.0  -g default,-mips,-darwin,-notdefault
-git clone https://github.com/maxx0021/local_manifests-rdp.git --depth 1 -b a13 .repo/local_manifests
+repo init --depth=1 --no-repo-verify -u  https://github.com/alphadroid-project/manifest -b alpha-13  -g default,-mips,-darwin,-notdefault
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j16
+git clone --depth=1 https://github.com/Maxx12211/android_device_xiaomi_rova.git -b 13.0-alphadroid device/xiaomi/rova
+git clone --depth=1 https://github.com/Maxx12211/android_vendor_xiaomi_rova.git -b 13 vendor/xiaomi/rova
+git clone --depth=1 https://github.com/Maxx12211/android_kernel_xiaomi_rova.git -b 13.0 kernel/xiaomi/rova
 
 # build rom
 curl -Lo barom.sh https://raw.githubusercontent.com/alanndz/barom/main/barom.sh
