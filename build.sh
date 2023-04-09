@@ -1,7 +1,6 @@
 # sync rom
-repo init --depth=1 --no-repo-verify -u  https://github.com/alphadroid-project/manifest -b alpha-13  -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u  https://github.com/Maxx12211/manifest_alpha -b alpha-13  -g default,-mips,-darwin,-notdefault
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j16
-git clone --depth=1 https://github.com/LineageOS/android_external_chromium-webview_prebuilt_arm64.git -b main external/chromium-webview/prebuilt/arm64
 git clone --depth=1 https://github.com/Maxx12211/android_device_xiaomi_rova.git -b 13.0-alphadroid device/xiaomi/rova
 git clone --depth=1 https://github.com/Maxx12211/android_vendor_xiaomi_rova.git -b 13.0 vendor/xiaomi/rova
 git clone --depth=1 https://github.com/Maxx12211/android_kernel_xiaomi_rova.git -b 13.0 kernel/xiaomi/rova
