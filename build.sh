@@ -1,5 +1,6 @@
 # sync rom
-repo init --depth=1 --no-repo-verify -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs -g default,-mips,-darwin,-notdefault
+repo init --depth=1 --no-repo-verify -u https://github.com/maxx0021/android.git -b lineage-20.0 --git-lfs -g default,-mips,-darwin,-notdefault
+repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j16
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
 sudo apt-get install git-lfs
 repo init --git-lfs
