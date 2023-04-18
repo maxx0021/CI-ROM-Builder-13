@@ -17,7 +17,7 @@ curl -Lo barom.sh https://raw.githubusercontent.com/Maxx12211/barom/main2/barom.
 chmod +x barom.sh
 ./barom.sh -t ${TG_CHAT_ID} ${TG_TOKEN}
 ./barom.sh --ccache-dir "${WORKDIR}/ccache" --ccache-size 20G
-./barom.sh --device rova --lunch lineage_rova-userdebug
-./barom.sh -b -j 8 -u gof --timer 105m -- mka bacon
+./barom.sh --device rova --lunch blaze_rova-userdebug
+./barom.sh -b -j 8 -u gof --timer 95m -- mka bacon
 
 # end
